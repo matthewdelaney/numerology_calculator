@@ -23,15 +23,16 @@ def translate(text):
     return translation
 
 
-def nsum(digits):
+def name_sum(digits):
      digit_sum = 0
      for d in digits:
              digit_sum += int(d)
      if len(str(digit_sum)) == 1:
              return digit_sum
      else:
-             return nsum(str(digit_sum))
+             return name_sum(str(digit_sum))
+
 
 if __name__ == '__main__':
     name = input('Name: ')
-    print(nsum(translate(name)))
+    print(name_sum(translate(name)))

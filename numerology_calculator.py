@@ -1,3 +1,9 @@
+# If the letters of the alphabet were always going
+# to be used in order for numerology, we wouldn't
+# need a lookup table at all (we could just use modular
+# arithmetic on the character-codes. I want this program
+# to be adaptable to other mappings, however, so the
+# following seems like a reasonable compromise right now
 translations = [['a', 'j', 's'],
                 ['b', 'k', 't'],
                 ['c', 'l', 'u'],
